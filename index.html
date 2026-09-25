@@ -3,53 +3,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Bonzon Exchange</title>
-  <meta name="description" content="Games and notes from Abby Bonzon's History of Economic Thought class.">
+  <title>History of Economic Thought Class · Baylor 2026 · Abigail Bonzon</title>
+  <meta name="description" content="Abigail Bonzon's History of Economic Thought class website, Baylor 2026: games and informational pages from the course.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html">The Bonzon <span>Exchange</span></a>
-      <nav class="nav">
-        <a href="#games">Games</a>
-        <a href="#entries">Updates</a>
-        <a href="#about">About</a>
-      </nav>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">AB</span>History of Economic Thought</a>
+      <nav class="nav" id="site-nav" aria-label="Projects"></nav>
     </div>
   </header>
 
-  <main class="wrap">
+  <main>
     <div class="hero">
-      <p class="eyebrow">History of Economic Thought · Fall 2026</p>
-      <h1>Economic ideas you can play</h1>
-      <p class="lede">Trivia and story games about the thinkers who shaped economics, from Adam Smith's pin factory onward. Built by Abby Bonzon.</p>
+      <div class="wrap">
+        <svg class="sprig" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true">
+          <path d="M22 40V10" stroke="#8cc084" stroke-width="2.5" stroke-linecap="round"/>
+          <ellipse cx="16" cy="16" rx="4" ry="7" transform="rotate(-35 16 16)" fill="#f4d35e"/>
+          <ellipse cx="28" cy="16" rx="4" ry="7" transform="rotate(35 28 16)" fill="#f4d35e"/>
+          <ellipse cx="16" cy="26" rx="4" ry="7" transform="rotate(-35 16 26)" fill="#8cc084"/>
+          <ellipse cx="28" cy="26" rx="4" ry="7" transform="rotate(35 28 26)" fill="#8cc084"/>
+          <ellipse cx="22" cy="8" rx="3.5" ry="6" fill="#f4d35e"/>
+        </svg>
+        <p class="pill"><span class="dot"></span>Baylor University · 2026</p>
+        <h1><span class="hl">History of Economic</span> Thought Class</h1>
+        <p class="byline">A class website by <strong>Abigail Bonzon</strong></p>
+      </div>
     </div>
 
-    <section id="games">
-      <h2>Games</h2>
-      <div class="grid" id="game-grid"></div>
-    </section>
+    <div class="wrap">
+      <section>
+        <div class="card welcome">
+          <h2>Welcome!</h2>
+          <p>My name is Abby Bonzon, and this is my website for History of Economic Thought. Throughout the course, I'll be adding games and informational pages meant to reinforce my learning. Please enjoy!</p>
+        </div>
+      </section>
 
-    <section id="entries">
-      <h2>Updates</h2>
-      <ul class="entries" id="entry-list"></ul>
-    </section>
-
-    <section id="about">
-      <h2>About</h2>
-      <p>I'm Abby Bonzon, and this is my semester project for History of Economic Thought. Each unit I'll add games that test and retell the ideas we cover in class.</p>
-    </section>
+      <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-list" id="project-list"></div>
+      </section>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap">© 2026 Abby Bonzon · The Bonzon Exchange</div>
+  <footer class="footer">
+    <div class="wrap">Abigail Bonzon · History of Economic Thought · Baylor University, 2026</div>
   </footer>
 
-  <script src="js/catalog.js"></script>
-  <script src="js/home.js"></script>
+  <script src="js/site.js"></script>
 </body>
 </html>

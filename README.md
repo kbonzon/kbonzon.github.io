@@ -1,40 +1,26 @@
-# The Bonzon Exchange
+# History of Economic Thought: Class Website
 
-Abby Bonzon's History of Economic Thought site (Fall 2026). Plain HTML, CSS, and JavaScript. No build step.
+Abigail Bonzon · Baylor 2026. Plain HTML, CSS, and JavaScript with no build step, hosted on GitHub Pages.
 
-## Folder layout
+## Files
 
 ```
-index.html          home page
-css/style.css       all styling
-js/catalog.js       list of games + home page updates  <- edit this often
-js/trivia.js        trivia game engine
-js/story.js         story game engine
-play/trivia.html    page that plays any trivia game
-play/story.html     page that plays any story game
-games/*.js          one data file per game              <- add new games here
+index.html               home page (welcome + project list)
+build-1.html             Build 1: Pre–Adam Smith and Adam Smith
+css/style.css            all styling
+js/site.js               list of builds (drives the top nav and the project list)
+js/role-game.js          role-playing game engine
+js/games/mercantile.js   Game 1: The Mercantile Age (textbook ch. 2)
+js/games/smith.js        Game 2: The Age of Adam Smith (textbook ch. 3)
 ```
 
-## Add a new game
+## Add a new build
 
-1. Copy `games/who-said-it.js` (trivia) or `games/kings-treasury.js` (story) to a new file, like `games/keynes-quiz.js`.
-2. Edit the questions or scenes.
-3. Add an entry to `js/catalog.js` whose `id` matches the file name (`keynes-quiz`) and whose `type` is `trivia` or `story`.
+1. Copy `build-1.html` to `build-2.html` and change its heading, note, and game scripts.
+2. Add an entry to `window.BUILDS` in `js/site.js`.
 
-It appears on the home page automatically.
+The nav bar and home page list update automatically.
 
-## Post an update
+## Edit a game
 
-Add an item to the top of `window.ENTRIES` in `js/catalog.js`.
-
-## Preview locally
-
-Double-click `index.html` to open it in your browser.
-
-## Publish on GitHub Pages
-
-1. Make a free account at github.com.
-2. Create a new public repository named `<your-username>.github.io` (for example `abbybonzon.github.io`).
-3. On the repo page, choose **uploading an existing file** and drag in everything inside this folder (not the folder itself).
-4. Commit. After a minute or two, the site is live at `https://<your-username>.github.io`.
-5. To update later, upload the changed files again (or edit them right on GitHub).
+Each role in `js/games/*.js` has a `world` intro, a list of `tasks` (each with one `correct: true` choice and a `lesson`), and a `takeaway`. Choices are shuffled when played.
