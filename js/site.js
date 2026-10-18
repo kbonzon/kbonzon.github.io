@@ -6,6 +6,12 @@ window.BUILDS = [
     title: "Build 1",
     subtitle: "Pre–Adam Smith and Adam Smith",
     href: "build-1.html"
+  },
+  {
+    num: 2,
+    title: "Build 2",
+    subtitle: "David Ricardo’s Model",
+    href: "build-2.html"
   }
 ];
 

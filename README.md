@@ -12,6 +12,9 @@ js/site.js               list of builds (drives the top nav and the project list
 js/role-game.js          role-playing game engine
 js/games/mercantile.js   Game 1: The Mercantile Age (textbook ch. 2)
 js/games/smith.js        Game 2: The Age of Adam Smith (textbook ch. 3)
+build-2.html             Build 2: David Ricardo's Model
+js/lab.js                step-by-step workbook engine + charts
+js/lessons/ricardo.js    Build 2 lessons (textbook ch. 5)
 ```
 
 ## Add a new build

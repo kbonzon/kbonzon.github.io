@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Build 2: David Ricardo’s Model · Abigail Bonzon</title>
+  <meta name="description" content="A step-by-step workbook on David Ricardo's model: rent, profits, value, and comparative advantage.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">AB</span>History of Economic Thought</a>
+      <nav class="nav" id="site-nav" aria-label="Projects"></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="page-head">
+      <p class="pill"><span class="dot"></span>Build 2</p>
+      <h1>David Ricardo’s Model</h1>
+      <p class="sub">A hands-on workbook. Each lesson gives you the numbers, draws the figure, and walks you through the model one calculation at a time.</p>
+      <div class="note">
+        <strong>How it works:</strong> type your answer and press <em>Check</em>. If you’re stuck, a hint appears, and after two tries you can reveal the answer. Some steps let you pick new numbers or drag sliders to see the model move. Your scores are saved in this browser.
+      </div>
+    </div>
+
+    <section>
+      <div id="lab" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">Workbook content based on Chapter 5 (“David Ricardo”) of the course textbook, <em>History of Economic Thought</em>.</div>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script src="js/lab.js"></script>
+  <script src="js/lessons/ricardo.js"></script>
+  <script>LAB.start("#lab", window.RICARDO_LESSONS, "ricardo");</script>
+</body>
+</html>
