@@ -19,6 +19,10 @@ build-3.html             Build 3: Bentham, Say, and Senior
 js/lessons/bentham-say-senior.js   Build 3 lessons + comparison quiz (textbook ch. 6)
 ```
 
+## Cache tags
+
+The HTML pages load CSS and JS with a version tag (for example `js/site.js?v=3`) so browsers fetch fresh copies after an update. When you change any CSS or JS file, bump the number in all the HTML pages.
+
 ## Add a new build
 
 1. Copy `build-1.html` to `build-2.html` and change its heading, note, and game scripts.
