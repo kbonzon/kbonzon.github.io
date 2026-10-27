@@ -15,6 +15,8 @@ js/games/smith.js        Game 2: The Age of Adam Smith (textbook ch. 3)
 build-2.html             Build 2: David Ricardo's Model
 js/lab.js                step-by-step workbook engine + charts
 js/lessons/ricardo.js    Build 2 lessons (textbook ch. 5)
+build-3.html             Build 3: Bentham, Say, and Senior
+js/lessons/bentham-say-senior.js   Build 3 lessons + comparison quiz (textbook ch. 6)
 ```
 
 ## Add a new build

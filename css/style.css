@@ -519,6 +519,17 @@ section { padding: 20px 0; }
 .calc-table tr:last-child td { border-bottom: 0; }
 .calc-table .hl { background: var(--yellow-soft); font-weight: 800; }
 
+.calc-table input[type="range"] { width: 90px; accent-color: var(--green-deep); vertical-align: middle; }
+.calc-table .win { background: var(--green-soft); font-weight: 800; color: var(--green-deep); }
+
+.venn-regions { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; margin-top: 12px; }
+.venn-region { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; font-size: 0.9rem; }
+.venn-region h4 { margin: 0 0 4px; font-family: var(--serif); font-size: 0.98rem; }
+.venn-region ul { margin: 0; padding-left: 18px; color: var(--muted); }
+.lab-figure .c-bentham { fill: var(--yellow); fill-opacity: 0.45; stroke: var(--yellow-deep); }
+.lab-figure .c-say { fill: var(--green); fill-opacity: 0.4; stroke: var(--green-deep); }
+.lab-figure .c-senior { fill: var(--blue); fill-opacity: 0.35; stroke: var(--blue); }
+
 .summary-list { margin: 8px 0 0; padding-left: 20px; }
 .summary-list li + li { margin-top: 6px; }
 

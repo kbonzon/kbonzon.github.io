@@ -138,7 +138,15 @@
   }
 
   // ---------- engine ----------
-  LAB.start = function (selector, lessons, key) {
+  LAB.start = function (selector, lessons, key, opts) {
+    const home = Object.assign(
+      {
+        eyebrow: lessons.length + " lessons · about 10 minutes each",
+        heading: "Work through the model",
+        intro: "Go in order the first time: each lesson builds on the one before."
+      },
+      opts || {}
+    );
     const root = document.querySelector(selector);
     let lesson, stepIdx, results;
 
@@ -154,9 +162,9 @@
 
     function renderHome(scroll) {
       const head = el("div", "era-head");
-      head.appendChild(text("p", "eyebrow", "Six lessons · about 10 minutes each"));
-      head.appendChild(text("h2", null, "Work through Ricardo’s model"));
-      head.appendChild(el("p", null, "Go in order the first time: each lesson builds on the one before."));
+      head.appendChild(text("p", "eyebrow", home.eyebrow));
+      head.appendChild(text("h2", null, home.heading));
+      head.appendChild(el("p", null, home.intro));
 
       const done = lessons.filter((l) => store.get(scoreKey(l)) != null).length;
       const fill = el("div", "progress-fill");
@@ -306,6 +314,8 @@
     '<rect x="' + x + '" y="' + y + '" width="' + Math.max(0, w) + '" height="' + Math.max(0, h) + '" class="' + cls + '"/>';
   const line = (x1, y1, x2, y2, cls) =>
     '<line x1="' + x1 + '" y1="' + y1 + '" x2="' + x2 + '" y2="' + y2 + '" class="' + cls + '"/>';
+
+  LAB.draw = { svg, t, rect, line };
 
   C.legend = (items) =>
     '<div class="legend">' +
