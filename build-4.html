@@ -24,12 +24,22 @@
       <h1>Bastiat and Mill</h1>
       <p class="sub">Two economists writing at the same moment, the late 1840s, who took the same inheritance in opposite directions. Bastiat pushed utilitarianism to its logical end; Mill tried one last time to hold the utility and labor perspectives together.</p>
       <div class="note">
-        <strong>Game 1: Standing on Shoulders.</strong> For each idea, you’ll see what an earlier thinker said, then decide what Bastiat or Mill did with it: <b>kept</b> it, <b>extended</b> it, <b>changed</b> it, or <b>rejected</b> it. Page numbers in parentheses refer to Hunt &amp; Lautzenheiser, Chapter 8.
+        <strong>Two games.</strong> <b>Game 1</b> traces what each man did with earlier thinkers’ ideas: kept, extended, changed, or rejected. <b>Game 2</b> puts them head to head. Page numbers in parentheses refer to Hunt &amp; Lautzenheiser, Chapter 8.
+      </div>
+      <div class="btn-row" style="margin-top:16px">
+        <a class="btn" href="#game1">Game 1: Standing on Shoulders</a>
+        <a class="btn ghost" href="#game2">Game 2: Bastiat or Mill?</a>
       </div>
     </div>
 
-    <section>
+    <section id="game1">
+      <h2 class="section-title">Game 1: Standing on Shoulders</h2>
       <div id="lab" aria-live="polite"></div>
+    </section>
+
+    <section id="game2">
+      <h2 class="section-title">Game 2: Bastiat or Mill?</h2>
+      <div id="lab2" aria-live="polite"></div>
     </section>
   </main>
 
@@ -40,11 +50,17 @@
   <script src="js/site.js?v=4"></script>
   <script src="js/lab.js?v=4"></script>
   <script src="js/lessons/bastiat-mill-lineage.js?v=4"></script>
+  <script src="js/lessons/bastiat-mill-duel.js?v=4"></script>
   <script>
     LAB.start("#lab", window.LINEAGE_LESSONS, "lineage", {
       eyebrow: "Four lessons · about 10 minutes each",
-      heading: "Standing on shoulders",
+      heading: "What did they do with the past?",
       intro: "Start with the setting, then trace Bastiat’s and Mill’s debts to earlier thinkers, and finish with the full inheritance chart."
+    });
+    LAB.start("#lab2", window.DUEL_LESSONS, "duel", {
+      eyebrow: "Three lessons · about 10 minutes each",
+      heading: "Same questions, opposite answers",
+      intro: "Sort their statements, debate five policy questions as each man, then place them on the course question."
     });
   </script>
 </body>
