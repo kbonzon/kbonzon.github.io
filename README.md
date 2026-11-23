@@ -17,6 +17,8 @@ js/lab.js                step-by-step workbook engine + charts
 js/lessons/ricardo.js    Build 2 lessons (textbook ch. 5)
 build-3.html             Build 3: Bentham, Say, and Senior
 js/lessons/bentham-say-senior.js   Build 3 lessons + comparison quiz (textbook ch. 6)
+build-4.html             Build 4: Bastiat and Mill
+js/lessons/bastiat-mill-lineage.js Build 4, Game 1: lineage of ideas (textbook ch. 8)
 ```
 
 ## Cache tags

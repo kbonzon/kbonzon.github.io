@@ -530,6 +530,16 @@ section { padding: 20px 0; }
 .lab-figure .c-say { fill: var(--green); fill-opacity: 0.4; stroke: var(--green-deep); }
 .lab-figure .c-senior { fill: var(--blue); fill-opacity: 0.35; stroke: var(--blue); }
 
+.chip { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 0.78rem; font-weight: 800; white-space: nowrap; }
+.chip.kept { background: var(--green-soft); color: var(--green-deep); }
+.chip.extended { background: var(--yellow-soft); color: var(--yellow-deep); }
+.chip.changed { background: var(--blue-soft); color: #3d6880; }
+.chip.rejected { background: var(--red-soft); color: var(--red); }
+.chip.none { background: var(--bg); color: var(--muted); }
+.calc-table td.wrap-cell { white-space: normal; min-width: 180px; }
+.calc-table.left th, .calc-table.left td { text-align: left; vertical-align: top; }
+.chip { text-transform: capitalize; margin-bottom: 4px; }
+
 .summary-list { margin: 8px 0 0; padding-left: 20px; }
 .summary-list li + li { margin-top: 6px; }
 
